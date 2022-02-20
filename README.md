@@ -145,12 +145,12 @@ And a return type
 ```typescript
 
 interface Book {
-    author: string,
-    year: numner,
-    title: string,
-    available: boolean,
-    genre: Genre,
-    pages: number.
+    author: string
+    year: numner
+    title: string
+    available: boolean
+    genre: Genre
+    pages: number
     difficulty: 1 | 2 | 3 | 4 | 5
 }
 
@@ -186,12 +186,12 @@ interface Params {
 }
 
 interface Book {
-    author: string,
-    year: numner,
-    title: string,
-    available: boolean,
-    genre: Genre,
-    pages: number.
+    author: string
+    year: number
+    title: string
+    available: boolean
+    genre: Genre
+    pages: number
     difficulty: 1 | 2 | 3 | 4 | 5
 }
 
@@ -202,5 +202,24 @@ const fetchBooks = async ({
    available
 }: Params): Book[] => {
      // code
+}
+```
+And maybe some params (or all) should not be forced
+```typescript
+interface Params {
+   author?: string
+   year?: string
+   title?: string
+   available?: boolean
+}
+```
+And maybe there can be extra params
+```typescript
+interface Params {
+   author?: string
+   year?: string
+   title?: string
+   available?: boolean
+   [key: string]: any
 }
 ```
