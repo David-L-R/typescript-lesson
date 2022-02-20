@@ -66,7 +66,7 @@ We can then expend using other types:
 type Health = {
      vaccinations: string[],
      general: numner,
-     allergies: string[]
+     allergies: string[] | null
 }
 
 type Pet = {
@@ -84,4 +84,33 @@ And we can even expend using more exotic types:
 type vaccinations = 'arvovirus' | 'distemper' | 'canine hepatitis' | 'rabies'
 
 type status = 'active' | 'inactive' | 'pending'
+```
+
+## Interfaces
+
+Very similar to types but have extra features.
+
+One extra feature is that they are extendable:
+
+```typescript
+interface Email {
+    sender: string
+    recipient: string
+    title: string
+    content: string
+}
+
+interface SecureEmail extends Email {
+    secure: boolean,
+    domain: 'hospital', 'private', 'pharmacy'
+}
+```
+
+## Functions
+
+```
+const fetchBooks = async (author, year, title, publisher) => {
+     
+    
+}
 ```
