@@ -1,3 +1,6 @@
+
+ <img src="https://user-images.githubusercontent.com/31222514/149813300-65804694-d3ea-4e31-955d-dbc47229a82d.png" width="50%" alt="Typescript logo">
+ 
 # Typescript
 
 Short summary of a typescript beginner's lesson
@@ -29,5 +32,9 @@ With object we can (and should) define each property
 ```typescript
 type Animal = {
   name: string,
+  legs: number,
+  friendly: boolean,
 }
 ```
+
+We can 
