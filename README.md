@@ -250,3 +250,14 @@ const submit = (form): void => {
      setForm(form)
 }
 ```
+
+## any
+
+```typescript
+
+interface Pet {
+    name: string,
+    age: number
+    favoriteToy: any
+}
+```
