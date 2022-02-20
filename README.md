@@ -69,9 +69,10 @@ type Health = {
      allergies: string[]
 }
 
-type Animal = {
+type Pet = {
+  id: number,
   name: string,
-  legs: number,
+  age: number,
   friendly: boolean,
   health: Health
 }
