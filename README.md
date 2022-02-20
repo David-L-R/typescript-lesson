@@ -97,7 +97,7 @@ type Book = {
 }
 
 
-type Dog = Animal & Canine
+type Dog = {name: string} & Animal & Canine
 ```
 
 ## Interfaces
