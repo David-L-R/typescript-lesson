@@ -80,13 +80,7 @@ type Pet = {
 
 And we can even expend using more exotic types:
 
-```
-Type Allergie = {
-   name: string,
-   type: string,
-   complications: string[]
-}
-
+```typescript
 type vaccinations = 'arvovirus' | 'distemper' | 'canine hepatitis' | 'rabies'
 
 type status = 'active' | 'inactive' | 'pending'
