@@ -108,9 +108,19 @@ interface SecureEmail extends Email {
 
 ## Functions
 
-```
+```typescript
 const fetchBooks = async (author, year, title, publisher) => {
-     
-    
+     return await axios.get('api.articles.com', 
+     {
+       params: {
+         auther,
+         year, 
+         title,
+         publisher
+      }
+     }
+  )    
 }
+
+fetchBooks({auther: 'Thomas Sowell'})
 ```
