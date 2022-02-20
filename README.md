@@ -155,7 +155,7 @@ interface Book {
 }
 
 
-const fetchBooks = async (author: string, year: number, title: string, available: boolean): Book[] => {
+const fetchBooks = async (author: string, year: number, title: string, available: boolean): Promise<Book[]> => {
      // code
 }
 ```
@@ -200,7 +200,7 @@ const fetchBooks = async ({
    year,
    title, 
    available
-}: Params): Book[] => {
+}: Params): Promise<Book[]> => {
      // code
 }
 ```
@@ -222,4 +222,25 @@ interface Params {
    available?: boolean
    [key: string]: any
 }
+```
+And lastly, we can also define functions inside interfaces
+```typescript
+interface Pet {
+   name: string
+   kind: string
+   age: number
+   friendly: boolean
+   noise: () => string
+}
+
+const dog: Pet = {
+   name: 'rocky'
+   kind: 'canine',
+   age: 1,
+   friendly: false,
+   noise: () => 'woof woof'
+}
+
+console.log(dog.noise())
+
 ```
