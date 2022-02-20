@@ -26,6 +26,15 @@ Not for nothing it is falvor #1
 4. Exceptions
 5. Logical
 
+
+```javascript
+const createFullName = (firstName, lastName) => {
+ return `4{firstName} ${lastName}`
+}
+
+createFullName({firstName: 'david', lastName: 'rajcher'})
+```
+
 ## Main types
 
 The main types will be the same as our data types:
