@@ -52,11 +52,27 @@ Array we define by using a type and adding a `[]` to it
 With object we can (and should) define each property
 
 ```typescript
-type Animal = {
+type Pet = {
+  id: number,
   name: string,
-  legs: number,
+  age: number,
   friendly: boolean,
 }
 ```
 
-We can 
+We can then expend using other types:
+
+```typescript
+type Health = {
+     shots: string[],
+     general: numner,
+     allergies: string[]
+}
+
+type Animal = {
+  name: string,
+  legs: number,
+  friendly: boolean,
+  health: Health
+}
+```
