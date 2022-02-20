@@ -5,6 +5,17 @@
 
 Short summary of a typescript beginner's lesson
 
+# Why
+
+Because it is AWESOME! 
+
+You can avoid so many (typed) bugs! and create a code that is more readable and clear to other developers.
+
+Not for nothing it is falvor #1
+
+![state of javascript](https://s3.eu-west-1.amazonaws.com/cd.sseu.re/items/bLuxng8E/3af806a4-6bc9-4cd9-99f2-9916d1cfece2.jpg?v=b98886f90248690c47ab0beaa1045ae9?v=b98886f90248690c47ab0beaa1045ae9)
+
+
 ## Errors
 
 1. syntax errors
