@@ -244,3 +244,9 @@ const dog: Pet = {
 console.log(dog.noise())
 
 ```
+What about functions that don't return anything?
+```typescript
+const submit = (form): void => {     
+     setForm(form)
+}
+```
