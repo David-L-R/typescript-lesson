@@ -9,7 +9,9 @@ Short summary of a typescript beginner's lesson
 
 Because it is AWESOME! 
 
-You can avoid so many (typed) bugs! and create a code that is more readable and clear to other developers.
+- avoid bugs
+- make code clear
+- more maintainable
 
 Not for nothing it is falvor #1
 
