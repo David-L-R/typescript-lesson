@@ -167,7 +167,7 @@ const fetchBooks = async ({
    year,
    title, 
    available
-}, {
+}: {
    author: string
    year: string
    title: string
