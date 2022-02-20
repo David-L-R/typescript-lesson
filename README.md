@@ -66,7 +66,7 @@ We can then expend using other types:
 type Health = {
      vaccinations: string[],
      general: numner,
-     allergies: string[] | null
+     allergies: string[]
 }
 
 type Pet = {
@@ -81,9 +81,20 @@ type Pet = {
 And we can even expend using more exotic types:
 
 ```typescript
-type vaccinations = 'arvovirus' | 'distemper' | 'canine hepatitis' | 'rabies'
+
+type Health = {
+     vaccinations: Vaccine[]
+}
+
+type Vaccine = 'arvovirus' | 'distemper' | 'canine hepatitis' | 'rabies'
 
 type status = 'active' | 'inactive' | 'pending'
+
+type Book = {
+   title: string,
+   author: string,
+   genere: Genere | null
+}
 ```
 
 ## Interfaces
