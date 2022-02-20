@@ -185,6 +185,16 @@ interface Params {
    available: boolean
 }
 
+interface Book {
+    author: string,
+    year: numner,
+    title: string,
+    available: boolean,
+    genre: Genre,
+    pages: number.
+    difficulty: 1 | 2 | 3 | 4 | 5
+}
+
 const fetchBooks = async ({
    author
    year,
