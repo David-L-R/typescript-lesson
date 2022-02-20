@@ -172,7 +172,25 @@ const fetchBooks = async ({
    year: string
    title: string
    available: boolean
-
 }): Book[] => {
      // code
 }
+```
+Let's separate the params' interface from the function
+```typescript
+interface Params {
+   author: string
+   year: string
+   title: string
+   available: boolean
+}
+
+const fetchBooks = async ({
+   author
+   year,
+   title, 
+   available
+}: Params): Book[] => {
+     // code
+}
+```
