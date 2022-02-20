@@ -29,7 +29,7 @@ Not for nothing it is falvor #1
 
 ```javascript
 const createFullName = (firstName, lastName) => {
- return `4{firstName} ${lastName}`
+ return `${firstName} ${lastName}`
 }
 
 createFullName({firstName: 'david', lastName: 'rajcher'})
