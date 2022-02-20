@@ -156,15 +156,23 @@ interface Book {
 
 
 const fetchBooks = async (author: string, year: number, title: string, available: boolean): Book[] => {
-     return await axios.get('api.articles.com', 
-     {
-       params: {
-         auther,
-         year, 
-         title,
-         publisher
-      }
-     }
-  )    
+     // code
 }
 ```
+Params as an object
+
+```typescript
+const fetchBooks = async ({
+   author
+   year,
+   title, 
+   available
+}, {
+   author: string
+   year: string
+   title: string
+   available: boolean
+
+}): Book[] => {
+     // code
+}
