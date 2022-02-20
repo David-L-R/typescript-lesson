@@ -95,6 +95,9 @@ type Book = {
    author: string,
    genere: Genere | null
 }
+
+
+type Dog = Animal & Canine
 ```
 
 ## Interfaces
