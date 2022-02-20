@@ -109,7 +109,25 @@ interface SecureEmail extends Email {
 ## Functions
 
 ```typescript
-const fetchBooks = async (author, year, title, publisher) => {
+const fetchBooks = async (author, year, title, available) => {
+     return await axios.get('api.articles.com', 
+     {
+       params: {
+         auther,
+         year, 
+         title,
+         available
+      }
+     }
+  )    
+}
+
+fetchBooks({auther: 'Thomas Sowell'})
+```
+
+Let's add some types
+```typescript
+const fetchBooks = async (author: string, year: number, title: string, available: boolean) => {
      return await axios.get('api.articles.com', 
      {
        params: {
@@ -121,6 +139,32 @@ const fetchBooks = async (author, year, title, publisher) => {
      }
   )    
 }
+```
+And a return type
 
-fetchBooks({auther: 'Thomas Sowell'})
+```typescript
+
+interface Book {
+    author: string,
+    year: numner,
+    title: string,
+    available: boolean,
+    genre: Genre,
+    pages: number.
+    difficulty: 1 | 2 | 3 | 4 | 5
+}
+
+
+const fetchBooks = async (author: string, year: number, title: string, available: boolean): Book[] => {
+     return await axios.get('api.articles.com', 
+     {
+       params: {
+         auther,
+         year, 
+         title,
+         publisher
+      }
+     }
+  )    
+}
 ```
