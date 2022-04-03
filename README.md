@@ -20,11 +20,11 @@ Not for nothing it is falvor #1
 
 ## Errors
 
-1. syntax errors
-2. Static type errors
-3. Dynamic type errors
-4. Exceptions
-5. Logical
+1. syntax errors (`{name: "David, email: "david.rajcher@codairsseur"`)
+2. Static type errors (`"Thanks for buying [object Object], we hope to see you again!"`)
+3. Dynamic type errors (`Uncaught TypeError: Cannot read property 'title' of undefined`)
+4. Exceptions (catching a 500 error... Typescript does not help)
+5. Logical 👑 (Typescript does not help)
 
 
 ```javascript
